@@ -26,24 +26,26 @@ Foram constatados vários problemas como:
 * Sem gerenciamento remoto dos servidores
 * Identificação do cabeamento estruturado desatualizada
 
-Infra anterior/atual(problemas): 
+### Infra anterior/atual(problemas): 
 
 ![Infra anterior](docs/infra_anterior_problemas.png)
 
-Infra atual/futuro(soluções): 
+### Infra atual/futuro(soluções): 
 
 ![Infra anterior](docs/infra_futura_redundancias.png)
 
-Segurança e estabilidade da nossa rede hoje:
+### Segurança e estabilidade da nossa rede hoje:
 
 ![Rede anel](docs/redundancia_geografica_rede_interna.png)
 
 Implementamos recentemente a redundância de Hardware ativa do nosso Firewall, um projeto que iniciou a um tempo quando constatamos que "o que aconteceria se nosso firewall Cisco ASA(desatualizado) queimasse?". Também, dentro do IFSC já estavam utilizando o PFSense como firewall e com excelentes resultados. Primeiramente substituimos para o PFSense e recentemente implementamos uma HA no nosso firewall. Ou seja, pode dar problema no nosso firewall master e o backup assume automaticamente.
 
-Segue vídeo da redundância funcionando:
+### Vídeo da redundância funcionando:
 
 [![Watch the video](https://img.youtube.com/vi/jkS7ZbTbtkA/0.jpg)](https://youtu.be/jkS7ZbTbtkA)
 
+### Firewall PFsense  Master e Backup:
 ![PFsense HA](docs/pfsense_carp_master_backup.png)
-<br>
+
+### Hardwares diferentes onde rodam o PFSense:
 ![PFsense HA2](docs/pfsense_ha_hardware.png)

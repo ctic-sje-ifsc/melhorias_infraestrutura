@@ -38,7 +38,7 @@ Foram constatados vários problemas como:
 
 ![Rede anel](docs/redundancia_geografica_rede_interna.png)
 
-Implementamos recentemente a redundância de Hardware ativa do nosso Firewall, um projeto que iniciou a um tempo quando constatamos que "o que aconteceria se nosso firewall Cisco ASA(desatualizado) queimasse?". Também, dentro do IFSC já estavam utilizando o PFSense como firewall e com excelentes resultados. Primeiramente substituimos para o PFSense e recentemente implementamos uma HA no nosso firewall. Ou seja, pode dar problema no nosso firewall master e o backup assume automaticamente.
+Implementamos recentemente a redundância de Hardware ativa do nosso Firewall, um projeto que iniciou a um tempo quando constatamos que "o que aconteceria se nosso firewall Cisco ASA(desatualizado) queimasse?". Também, dentro do IFSC já estavam utilizando o PFSense como firewall e com excelentes resultados. Primeiramente substituimos para o PFSense e recentemente implementamos uma HA no nosso firewall. Ou seja, pode dar problema no nosso firewall master e o backup assume automaticamente. Utilizamos como [referência](https://doc.pfsense.org/index.php/High_Availability) a documentação oficial do PFSense.
 
 ### Vídeo da redundância funcionando:
 

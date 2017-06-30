@@ -10,15 +10,15 @@ A CTIC atualmente administra em sua infra:
 * Central telefônica +/- 70 Ramais
 * +30 Servidores Virtuais (Wiki, armazenamento, página web, Câmeras...)
 
-Em 2016 começamos vários projetos para implementar técnicas de redundância nas várias camadas na nossa infraestrutora. Almejamos atingir um alto nível de maturidade, segurança e estabilidade da infra, assim daremos suporte a outros projetos relacionados como por exemplo a mudança na forma de como provemos e administramos nossos serviços.
+Em 2016 começamos vários projetos para implementar técnicas de redundância nas várias camadas na nossa infraestrutora. Almejamos atingir um alto nível de maturidade, segurança e estabilidade da infra, assim daremos suporte a outros projetos relacionados como por exemplo a mudança na forma de como [provemos](https://github.com/ctic-sje-ifsc/kubernetes) e [administramos](https://github.com/ctic-sje-ifsc/coreos) nossos serviços.
 
 Foram constatados vários problemas como:
 
 * Sem redundância de 
-* * firewall (1 Cisco ASA)
-* * servidor de arquivos
-* * do core switch
-* * dos virtualizadores
+  * firewall (1 Cisco ASA)
+  * servidor de arquivos
+  * do core switch
+  * dos virtualizadores
 * Vários switches não gerenciáveis
 * Sem documentação da infra
 * Muito cabeamento  antigo (morto) nas calhas e racks
@@ -43,7 +43,7 @@ Foram constatados vários problemas como:
 
 ### O que já atingimos:
 * Cabeamento novo eliminando os switches críticos não gerenciáveis
-* Infra/VLAN/IP/Conexões documentadas no Netbox
+* Infra/VLAN/IP/Conexões documentadas no [Netbox](https://netbox.sj.ifsc.edu.br/)
 * Limpeza e organização dos racks e nas calhas (Km de cabos)
 * Reposicionamento e instalação de AP’s
 * Habilitado gerenciamento remoto (ILO, Idrac e iMM) nos servidores
@@ -60,13 +60,13 @@ Foram constatados vários problemas como:
 
 
 # HA no Firewall
-Implementamos recentemente a redundância de Hardware ativa do nosso Firewall, um projeto que iniciou a um tempo quando constatamos que "o que aconteceria se nosso firewall Cisco ASA queimasse?". Dentro do IFSC alguns câmpus já utilizavam o PFSense como firewall e com excelentes resultados. Primeiramente substituimos o firewall atuala para o PFSense e recentemente implementamos uma HA no nosso firewall, ou seja, se nosso firewall master morrer, o firewall backup assume automaticamente. Utilizamos como [referência](https://doc.pfsense.org/index.php/High_Availability) a documentação oficial do PFSense.
+Implementamos recentemente a redundância de Hardware ativa do nosso Firewall, um projeto que iniciou a um tempo quando constatamos que "o que aconteceria se nosso firewall Cisco ASA queimasse?". Dentro do IFSC alguns câmpus já utilizavam o PFSense como firewall e com excelentes resultados. Primeiramente substituimos o firewall atual para o PFSense e recentemente implementamos uma HA(high availability) no nosso firewall, ou seja, se nosso firewall master morrer, o firewall backup assume automaticamente. Utilizamos como [referência](https://doc.pfsense.org/index.php/High_Availability) a documentação oficial do PFSense.
 
 ### Vídeo da redundância funcionando:
 
 [![Watch the video](https://img.youtube.com/vi/jkS7ZbTbtkA/0.jpg)](https://youtu.be/jkS7ZbTbtkA)
 
-### Firewall PFsense  Master e Backup:
+### CARP Status - Firewall PFsense Master e Backup:
 ![PFsense HA](docs/pfsense_carp_master_backup.png)
 
 ### Hardwares diferentes onde rodam o PFSense:

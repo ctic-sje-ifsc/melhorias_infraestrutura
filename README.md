@@ -57,7 +57,8 @@ Essas ações fazem parte de um projeto macro, e implementa o suporte confiável
 * Autenticação por porta em pontos públicos (802.1X)
 * Política de acessos nas VLAN (ACL)
 
-# Alta disponibilidade no _firewall_
+# HA no _firewall_
+#### Alta disponibilidade no _firewall_
 Recentemente foi implementada a [redundância ativa](https://doc.pfsense.org/index.php/High_Availability) de _firewall_ via servidores físicos distintos, onde foi feito o [registro em vídeo](https://youtu.be/jkS7ZbTbtkA):
 
 -[![Registro em Vídeo do teste](https://img.youtube.com/vi/jkS7ZbTbtkA/0.jpg)](https://youtu.be/jkS7ZbTbtkA)

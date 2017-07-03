@@ -59,7 +59,8 @@ Essas ações fazem parte de um projeto macro, e implementa o suporte confiável
 
 # Alta disponibilidade no _firewall_
 Recentemente foi implementada a [redundância ativa](https://doc.pfsense.org/index.php/High_Availability) de _firewall_ via servidores físicos distintos, onde foi feito o [registro em vídeo](https://youtu.be/jkS7ZbTbtkA):
-[Registro em vídeo](https://img.youtube.com/vi/jkS7ZbTbtkA/0.jpg)
+
+-[![Registro em Vídeo do teste](https://img.youtube.com/vi/jkS7ZbTbtkA/0.jpg)](https://youtu.be/jkS7ZbTbtkA)
 
 ### CARP Status - _Firewall_ pfSense mestre e escravo: CARP Status![PFsense HA](docs/pfsense_carp_master_backup.png)
 

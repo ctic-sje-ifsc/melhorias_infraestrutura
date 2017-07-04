@@ -59,7 +59,23 @@ Essas ações fazem parte de um projeto macro, e implementa o suporte confiável
 
 # HA no _firewall_
 #### Alta disponibilidade no _firewall_
-Recentemente foi implementada a [redundância ativa](https://doc.pfsense.org/index.php/High_Availability) de _firewall_ via servidores físicos distintos, onde foi feito o [registro em vídeo](https://youtu.be/jkS7ZbTbtkA):
+Recentemente foi implementada a [redundância ativa](https://doc.pfsense.org/index.php/High_Availability) de _firewall_ via servidores físicos distintos. 
+
+Essa demanda foi baseada no seguinte questionamento: "E se/quando nosso firewall Cisco ASA queimar/dar problema?". 
+Dentro do IFSC alguns câmpus já utilizavam o PFSense como firewall e com excelentes resultados. Com isso, primeiramente substituímos o firewall atual para o PFSense para poder implantar alta disponibilidade. Os _Hardwares_ utilizados(doação: obsoleto da reitoria) são o seguinte:
+
+* Master - IBM System x3200 M2:
+  * Processador: Intel(R) Xeon(R) CPU X3320 @ 2.50GHz (4 CPUs: 1 package(s) x 4 core(s))
+  * Memória: 8 GB
+    * Load average: 0.30, 0.43, 0.37
+    * CPU usage: 8%
+    * Memory usage	6% of 8155 MiB
+
+* Backup - IBM xSeries 206m: 
+  * Processador: Intel(R) Pentium(R) D CPU 3.00GHz (2 CPUs: 1 package(s) x 2 core(s))
+  * Memória 2 GB
+
+Fizemos o [registro em vídeo](https://youtu.be/jkS7ZbTbtkA):
 
 -[![Registro em Vídeo do teste](https://img.youtube.com/vi/jkS7ZbTbtkA/0.jpg)](https://youtu.be/jkS7ZbTbtkA)
 

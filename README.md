@@ -75,7 +75,7 @@ Dentro do IFSC alguns câmpus já utilizavam o PFSense como firewall e com excel
   * Processador: Intel(R) Pentium(R) D CPU 3.00GHz (2 CPUs: 1 package(s) x 2 core(s))
   * Memória 2 GB
 
-Fizemos o [registro em vídeo](https://youtu.be/jkS7ZbTbtkA) da POC de um possível problema com o Firewall Master:
+Fizemos o [registro em vídeo](https://youtu.be/jkS7ZbTbtkA) da PoC de um possível problema com o Firewall Master:
 
 -[![Registro em Vídeo do teste](https://img.youtube.com/vi/jkS7ZbTbtkA/0.jpg)](https://youtu.be/jkS7ZbTbtkA)
 

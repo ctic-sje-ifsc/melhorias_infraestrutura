@@ -49,11 +49,11 @@ Essas ações fazem parte de um projeto macro, e implementa o suporte confiável
 * Atualização da ferramenta de monitoramento (Zabbix)
 * Migração para nova faixa IPv4 e implantação do IPv6
 * Implantação de VLANs baseado no GT-VLAN
+* Melhorar o monitoramento Zabbix
 
 ### Metas a serem alcançadas
 * Reorganização dos Racks centrais (75% concluído)
 * Padronização e aplicação da identificação do cabeamento estruturado, conforme a [monografia da aluna Luana Beatriz da Silva](http://wiki.sj.ifsc.edu.br/wiki/index.php/Projeto_de_Reestrutura%C3%A7%C3%A3o_do_Cabeamento_Estruturado)
-* Melhorar o monitoramento Zabbix
 * Autenticação por porta em pontos públicos (802.1X)
 * Política de acessos nas VLAN (ACL)
 

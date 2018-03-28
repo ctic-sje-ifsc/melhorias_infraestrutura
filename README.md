@@ -2,9 +2,9 @@
 
 A CTIC atualmente administra em sua infraestrutura:
 * 14 Servidores físicos
-* 37 Switches gerenciáveis (+ alguns não gerenciáveis)
+* 48 Switches gerenciáveis (+ alguns não gerenciáveis)
 * Firewall PFSense com redundância ativa de _hardware_ via [CARP](https://www.freebsd.org/doc/handbook/carp.html)
-* 25 APs Cisco séries 1600 e 2600
+* 26 APs Cisco séries 1600 e 2600
 * 380 Computadores
 * Central telefônica com aproximadamente 70 ramais
 * +30 Servidores Virtuais ([página Web](http://sj.ifsc.edu.br), [wiki](http://wiki.sj.ifsc.edu.br), câmeras e outros)
